@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- normalizer alternative to css reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!-- Modernizr what HTML, CSS and JavaScript features the user’s browser has to offer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RWD Template</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="25" height="25">
+              <path d="M0,5 30,5" stroke="#FFF" stroke-width="3.5"/>
+              <path d="M0,14 30,14" stroke="#FFF" stroke-width="3.5"/>
+              <path d="M0,23 30,23" stroke="#FFF" stroke-width="3.5"/>
+            </svg>
+          </a>
+        </span>
+        <ul class="navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+    <div id="main">
+      <div class="flex-container">
+        <div>1</div>
+          <div>2</div>
+        <div>3</div>
+      </div>
+  </div>
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = "250px";
+      document.getElementById('main').style.marginLeft = "250px";
+
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = "0px";
+      document.getElementById('main').style.marginLeft = "0px";
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!-- <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script> -->
